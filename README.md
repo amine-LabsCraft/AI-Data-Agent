@@ -768,6 +768,8 @@ Ces schémas garantissent que chaque nœud du graphe reçoit et produit un état
 
 ### 2. SQL Analyst Agent
 
+![SQL Agent](SQL%20Agent.png)
+
 **Fichier** : `agents/sql_analyst.py`
 
 **Responsabilités :**
@@ -786,6 +788,7 @@ Ces schémas garantissent que chaque nœud du graphe reçoit et produit un état
 7. Answer Generation — Formate et retourne les résultats
 
 ### 3. ETL Analyst Agent
+![ETL Agent](ETL%20Agent.png)
 
 **Fichier** : `agents/etl_analyst.py`
 
