@@ -1,0 +1,53 @@
+# --- Environment variables ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual environments ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Fichiers générés par le projet (graphes LangGraph, exports de schéma) ---
+sql_analyst_graph.png
+data_agent_graph.png
+etl_analyst_graph.png
+test_schema_details.txt
+
+# --- Données extraites/transformées par les agents ETL ---
+data/extract/
+data/transform/
