@@ -13,7 +13,7 @@ class DatabaseUtil:
 
     def schema_details(self, schema_name):
         schema_info_context = f"Database Schema: {schema_name}\n"
-
+ 
         connection = self.connection
         cursor = None
 

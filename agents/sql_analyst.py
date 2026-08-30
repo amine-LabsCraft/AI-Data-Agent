@@ -274,7 +274,7 @@ if __name__ == "__main__":
 
     input_schema = {
         "messages": [],
-        "user_question": "What are the different types of Payment Methods we have in our database",
+        "user_question": "What are the different types of Payment Methods we have in our DB ",
         "curated_ques": "",
         "prompt_query_context": "",
         "generated_sql_query": "",
@@ -288,6 +288,17 @@ if __name__ == "__main__":
     sql_analyst_response = sql_analyst.invoke(input_schema)
     print(sql_analyst_response['messages'])  # Print the final output of the graph execution
     print("********************************")
+    print("user_question " + sql_analyst_response['user_question'])
+    print("********************************************************")
+    print("curated_ques " + sql_analyst_response['curated_ques'])
+    print("************************************")
+    
+    print("Is it safe : " + sql_analyst_response['is_safe'] + " comment : " + sql_analyst_response['comments'] )
+    print("****************************************************")
+    print(sql_analyst_response['prompt_query_context'])  # Print the prompt query context
+                
+    print("*****************************************")
+    
 
     print(sql_analyst_response['generated_sql_query'])  # Print the generated SQL query
 
@@ -295,6 +306,6 @@ if __name__ == "__main__":
 
     print(sql_analyst_response['sql_query_execution_result'])  # Print the result of executing the SQL query
 
-    print("********************************")
-
-    print(sql_analyst_response['prompt_query_context'])  # Print the prompt query context
+    print("**************************************")
+    
+    print(sql_analyst_response['final_answer'])
